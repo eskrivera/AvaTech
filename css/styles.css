@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 /* font-family: 'Lato', sans-serif;
 font-family: 'Yusei Magic', sans-serif; */
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -48,7 +52,7 @@ nav{
     height: 80px;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(179, 162, 162, 0.5);
-    /* transition: ease-in-out 0.5s; */
+    transition: ease-in-out 0.5s;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -251,7 +255,7 @@ nav{
 
 .contenido-question{
 
-    height: 600px;
+    height: 100vh;
     padding-top: 40px;
     padding-bottom: 60px;
     display: flex;
@@ -320,6 +324,7 @@ nav{
 .content-results{
     width: 100%;
     height: 600px;
+    padding-top:100px;
 }
 
 .numbers{
@@ -551,6 +556,10 @@ footer{
        margin-top: 20%;
     }
 
+    .gray2{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:640px){
@@ -605,6 +614,10 @@ footer{
         font-size: 15px;
     }
 
+    .gray2{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -652,4 +665,74 @@ footer{
 
     .partfooter {
         width: 40%;
+    }
+
+    .gray2{
+        display: none;
+    }
+
+    .icons {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:350px){
+
+    .contenido-header {
+        height: 500px;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .textos-header p {
+        margin-bottom: 18ox;
+    }
+
+    .articulo {
+        width: 90%;
+    }
+
+    .textos-question {
+        width: 95%;
+    }
+
+    .textos-question h2 {
+    
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .textos-question p {
+        font-size: 14px;
+    }
+
+    .number {
+        width: 90%;
+        height: 300px;
+    }
+
+    .number p {
+        display: block;
+    }
+
+    .gray2{
+        display: block;
+        background-color:RGB(230,230,230) !important;
+    }
+
+    .gray2 h4{
+        color:rgb(63,61,86) !important;
+    }
+
+    .gray2 p{
+        color:rgb(63,61,86) !important;
+    }
+
+    .icons {
+        width: 80%;
+    }
 }
