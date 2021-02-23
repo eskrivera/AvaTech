@@ -81,6 +81,7 @@ nav{
 
 .enlaces-header{
     font-weight: 300;
+    transition: ease-in-out 0.5s;
 }
 
 
@@ -104,6 +105,10 @@ nav{
     cursor: pointer;
     /* transition: color 0.7s ease-in; */
     display: none;
+}
+
+.menublanco1{
+    color: white;
 }
 
 .menu > i{
@@ -460,6 +465,26 @@ footer{
     background-color: white;
 }
 
+.desarrollo{
+    margin-top: 10px;
+    border-top: 2px solid white;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+.desarrollo p{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:1000px){
+    .contenido-header img {
+        width: 50%;
+    }
+}
 
 
 @media screen and (max-width:800px){
@@ -475,6 +500,7 @@ footer{
 
     .nav .enlaces-header a {
         margin-left: 9px;
+        font-size: 14px;
     }
 
     .textos-header{
@@ -502,7 +528,7 @@ footer{
     }
 
     .textos-question {
-        width: 80%;
+        width: 90%;
         padding: 0 30px 20px 30px;
         margin-bottom: 30px;
     }
@@ -565,11 +591,36 @@ footer{
 @media screen and (max-width:640px){
 
     .enlaces-header{
-        display: none;
+        position:fixed;
+        background: #8A2387;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        clip-path: circle(0% at 100% 0);
+
     }
+
+    .nav .menudos{
+        clip-path: circle(139.7% at 99% 1%);
+    }
+
+   
+    .nav .enlaces-header a{
+        color:white;
+    }
+
 
     .menu{
         display: block;
+        z-index: 100;
+        transition: color 0.5s;
     }
 
     .textos-header {
@@ -627,7 +678,12 @@ footer{
     }
 
     .articulo {
-        width: 65%;
+        width: 85%;
+    }
+
+    .textos-question h2{  
+        font-size: 22px;
+      
     }
 
     .number {
@@ -701,7 +757,7 @@ footer{
 
     .textos-question h2 {
     
-        font-size: 18px;
+        font-size: 16px;
         height: 50px;
         line-height: 50px;
     }
