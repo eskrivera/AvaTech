@@ -36,3 +36,13 @@ document.querySelectorAll(".menu") [0].addEventListener("click", function(){
 
     menuBlanco.classList.toggle("menublanco1")
 })
+
+
+//loader
+
+window.onload = function(){
+    var theLoader = document.getElementById('loader');
+
+    theLoader.style.visibility = 'hidden';
+    theLoader.style.opacity = '0';
+}
